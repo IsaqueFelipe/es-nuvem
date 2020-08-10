@@ -1,0 +1,15 @@
+/**
+* [________________espacosideral_2020______________]
+* [______________________I.F.F.C___________________]
+* [                        ...                     ]
+**/
+body{
+	background: url(../imagens/fundo.jpg);
+}
+.configurar{
+	float: none;
+}
+.registro{
+	font-size: x-large;
+	font-weight: bolder;
+}

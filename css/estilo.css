@@ -1,0 +1,468 @@
+  /**
+  * [________________espacosideral_2020______________]
+  * [______________________I.F.F.C___________________]
+  * [                        ...                     ]
+  **/
+
+/*/____________________===Fonts_Importadas===_______________________/*/
+@font-face{
+
+   src: local('HelveticaNeueLTStd-UltLt.otf'), url('HelveticaNeueLTStd-UltLt.otf');
+   
+   font-family: 'Magneto';  
+   src: local('Magneto'), url('../fonts/MAGNETOB.TTF');
+}
+/*/_______________________________________________________________/*/
+
+body {
+   padding-top: 3rem;
+   background-color: #000;
+
+}
+.starter-template {
+   padding: 3rem 1.5rem;
+   text-align: center;
+}
+.cabecalho{
+   padding: 0.1rem 5%;
+   background-image: linear-gradient(#00256f 0%,#000 85%,#00256f 100%);
+}
+a{
+  color:#7f99ff;
+}
+a:hover{
+  text-decoration:none;
+  color: #fff;
+}
+p{
+  font-size: 20px;
+  text-align: justify !important;
+}
+.blog-post-meta{
+  font-size: 12px;
+}
+/*/_______________=Areás=de=foco=________________/*/
+#Registre_se:focus{
+    box-shadow: 0 0 6px 0.5rem rgba(0, 255, 58, 0.5);
+    text-shadow: 0px 0px 10px #00ff00;
+}
+#pesquisar:focus, #pesq_exter:focus{
+  box-shadow: 0px 0 8px 0.5rem rgba(0, 255, 114, 0.6);
+}
+#hovercoment:hover > iframe#framecomentario{
+
+}
+/*/_______________________==Menu=Usuário==____________________________/*/
+.configurar{
+   float: right;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+.perfil{
+   height: 38px;
+   width: 38px;
+   border-radius: 20px;
+   border: 3px ridge #096e7a;
+}
+.perfil img{
+   border-radius: 20px;
+   width: 32px;
+   height: 32px;
+}
+.bMenu{
+   background-color: transparent;
+   border: 3px groove #096975;
+   border-radius: 15px !important;
+   border-bottom-right-radius: 50px !important;
+   border-style: inset;
+}
+.bMenu:hover{
+   background-color: transparent;
+   border-color: none;
+}
+.bMenu:focus{
+   box-shadow: 0px 0px 0px 3px rgba(202, 0, 255, 0.25);
+}
+.container{
+   color: #e96b00;
+}
+.row{
+   margin-right: -7px;
+   margin-left: -7px;
+}
+.inicial{
+   flex: none;
+   max-width: none;
+}
+.blog-sidebar{
+   padding-top: 20px;
+}
+.dropdown-menu{
+  background-color: #001031;
+}
+.dropdown-item{
+  color:#fff;
+}
+/*____________Tela de Registro______________*/
+.registro{
+   margin: 5px 15px;
+   font-style: italic;
+}
+.card-header, .card-body, .modal-header, .modal-body, .modal-footer{
+   padding: 7px 10px;
+}
+.form-control{
+   margin: 8px auto;
+   background-color: #ffffffd1;
+}
+label{
+   display: flex
+}
+.senha{
+   margin-right: 5px;
+   margin-left: 5px;
+}
+.modal.show .modal-dialog {
+   margin-top: 100px;
+}
+@media only screen and (max-width: 780px){
+  .configurar{
+    margin-top: 10px;
+  }
+  #form_pesquisa{
+    display: inline-flex;
+
+  }
+
+}
+@media only screen and (max-width: 550px){
+    .configurar{
+      margin-top: -45px;
+    }
+
+    #form_pesquisa{
+      display: flex;
+
+    }
+
+    label{
+      display: block;
+    }
+    .senha{
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+   /*==Rodapé==*/
+}
+/*============================Menu_Rolante===========================*/
+.nav-scroller {
+   position: relative;
+   z-index: 2;
+   height: 2.5rem;
+   overflow-y: hidden;
+   background-color: #a4b1ff;
+   background-image: linear-gradient(#00256f 10%,#000 60%,#00256f 100%);
+   padding: 55px 20px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   margin-bottom: 8px;
+   margin-top:2px;
+}
+.nav-scroller .nav {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   padding-bottom: 1rem;
+   margin-top: -1px;
+   overflow-x: auto;
+   text-align: center;
+   white-space: nowrap;
+   -webkit-overflow-scrolling: touch;
+}
+.nav-scroller .nav-link {
+   padding-top: .75rem;
+   padding-bottom: .75rem;
+   font-size: .875rem;
+}
+.p-2{ color:#fff !important;  }
+
+@media only screen and (max-width: 991px){
+   .nav-scroller{ margin-top: 20px !important;  }
+}
+@media only screen and (max-width: 863px){
+   .nav-scroller{ margin-top:55px !important;  }
+}
+@media only screen and (max-width: 816px){
+   .nav-scroller{ margin-top: 55px !important;  }
+}
+@media only screen and (max-width: 767px){
+   .nav-scroller{ margin-top: 3px !important }
+}
+/*####################################################################*/
+
+.lis{
+   padding: 3px 6px !important;
+}
+.seta{
+   padding: 7px 3px 0px 3px;
+   color: #fff;
+   font-weight: bold;;
+}
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: var(--purple); }
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
+/*______________________________________________________________________*/
+/* CUSTOMIZE THE CAROUSEL----------------------------------------------*/
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 0rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: ;
+  background-color: ;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+.carousel-control-prev {  left: px;  width: 5%;  }
+.carousel-control-next {  right: px; width: 5%;  }
+.materiac{
+    background-color: #172131;
+}
+
+.text-dark, a.text-dark:focus, a.text-dark:hover{
+  color: white !important;
+}
+/*______________________________________________________________________*/
+/*---------------------------------------------------------------------*/
+.imgcenter{
+   max-width: 700px;
+   margin: 0 auto;
+}
+.anuncio{
+   height: 320px;
+   margin: 20px 0px 30px 0px !important;
+   background-color: #ffffff1c !important;
+}
+.anuncio2{
+    width: 98.5%;
+    height: 160px;
+    margin: 20px auto 30px auto !important;
+  background-color: #ffffff1c !important;
+}
+
+.blog-pagination{
+    text-align: center;
+    width: 100%;
+}
+/*============tooltip===============*/
+.tooltip {
+  min-width: 250px;
+  max-width: 500px;
+}
+.tooltip .tooltip-inner {
+  min-width: 250px;
+  max-width: 500px;
+  min-height: 100px;
+  text-align: left;
+}
+.container-viewport {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  left: 250px;
+  height: 300px;
+  background-color: #eee;
+}
+.btn-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*==================Forum===================*/
+.subDiv{
+    color: #bbbbbb;  
+}
+.bot-padr{
+    border-radius: 8px;
+    background-color: #0f144b;
+    font-size: small;
+    font-weight: bold;
+    border: 2px solid #034668;
+    display: flow-root;
+    padding: 5px;
+    color: white;
+}
+.bot-padr2{
+  text-align: center;
+    border-radius: 5px;
+    background-color: #0f144b;
+    font-size: large;
+    font-weight: bold;
+    border: 2px groove rebeccapurple;
+    display: flow-root;
+    padding: 2px;
+    text-align: center;
+    background-color: #1c7dc3;
+}
+.bot-padr2:hover{
+    border-size: 4px;
+}
+#textmessage,#texttitulo{
+  width: 100%;
+  border-radius: 3px;
+  padding: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.label{
+  font-weight: 900;
+}
+.labe_ferr{
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+    border-radius: 3px;
+    display: flex;
+}
+::-webkit-file-upload-button {
+    border-radius: 5px;
+    background-color: #0f144b;
+    font-size: small;
+    font-weight: bold;
+    border: 2px groove rebeccapurple;
+    color: white;
+}
+
+/*===============Alerta==================*/
+#mmodal{
+    background: #000000de;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+}
+
+.alerta{
+    margin: 100px auto;
+    width: 45%;
+    height: 35%;
+    background: white;
+    z-index: 1050;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #9e9e9e;
+    text-align: center;
+}
+.mtexto{
+    padding-top: 55px;
+}
+.fechar{
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+/*==================Área_de_Comentários===================*/
+.comentario-area{
+   background-color: rgba(0, 20,78, 0.3) !important;
+   box-shadow: 0px 0px 10px 0px #000e5c;
+}
+.divcomem{
+  border: 2px outset #00b8ff59;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px 0px;
+  background-color: #2a41a524;
+}
+.enviar-res{
+    float: none !important;
+    top: 60px !important;
+    right: 55px !important;
+}
+
+.enviar{
+   float: right;
+   position: relative;
+   top: -32px;right: 1px;
+   border-radius: 5px;
+   background-color: #0f144b;
+   font-size: small;
+   font-weight: bold;
+   border: 2px groove rebeccapurple;
+   color: white;
+}
+.enviar:hover, .enviar:focus, .enviar:active{
+   box-shadow: 0px 0px 2px 1px #0c007d;
+}
+.mm{
+  margin: 10px !important;
+  font-size: 15px;
+  border: 2px groove blue;
+  border-radius: 15px;
+  background-color: brown;
+  padding: 0px 10px;
+
+}
+.mm:hover{
+  text-decoration: none;
+}
+.respondeComent, .respondeForum{
+  text-align: right;
+  border-bottom: 2px double #002163;
+  margin: 0px 47px;
+}
+/*==================Área_de_Rodapé===================*/
+.footer {
+   position: sticky;
+   bottom: -35px;
+   right: 0;
+   width: 100%;
+   height: auto;/*height: 65px;*/
+   line-height: 30px;
+   background-image: linear-gradient(#00256f 0%,#000 ,#00256f 100%);
+   font-family: 'Magneto';
+}
+@media only screen and (max-width: 715px){
+   .footer{ bottom: -65px !important }
+   .carousel-control-prev {   left: 0px;   }
+   .carousel-control-next {   right: 0px;  }
+   .anuncio, .anuncio2{ height: 160px   }
+}
+.direitos{
+   font-family: monospace;
+   color: #888888;
+   line-height: 15px;
+}
+.container {
+   width: auto;
+   max-width: 1150px;
+   padding: 0 10px;
+}
+
+/*=====Compartilhar=====*/
+.compartilhar li{
+  list-style: none;
+  float: left;
+  margin: 3px 4px;
+}
